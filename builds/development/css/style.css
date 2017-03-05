@@ -91,5 +91,9 @@ section {
   width: 90%;
   margin: 0 auto; }
 
+.article {
+  border: 1px solid grey;
+  padding: 20px; }
+
 .key {
   margin: 100px 0px; }

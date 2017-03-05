@@ -31,8 +31,8 @@ var env,
 // > export NODE_ENV=development (for MacOS)
 // > gulp
 // env = process.env.NODE_ENV || 'development' // node env var otherwise defaults to dev
-// env = 'production'
-env = 'development'
+env = 'production'
+// env = 'development'
 
 // modify how outputDir is used depending on env var
 if (env==='development'){
@@ -47,7 +47,7 @@ if (env==='development'){
 // var coffeeSources = ['components/coffee/*.coffee'];
 // Use an array in case you need to add additional files later
 // or the asterisk to specify all files of a specific type
-coffeeSources = ['components/coffee/jq.coffee'];
+coffeeSources = ['components/coffee/*.coffee'];
 
 // JS SOURCES
 // array of paths to all of the js documents
@@ -106,7 +106,7 @@ gulp.task('compass', function(){
       // Can create an object here instead of using config.rb
       sass: 'components/sass', // src for sass
       image: outputDir + 'images', // src for imgs
-      style: 'nested' // format for output: http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+      style: sassStyle // format for output: http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
     }))
     .on('error', gutil.log)
     .pipe(gulp.dest(outputDir + 'css'))
