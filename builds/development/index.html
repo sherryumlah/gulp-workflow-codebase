@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <section class="section">
+    <header class="header">
+      <h1>Header</h1>
+    </header>
+    <article class="article" id="example"></article>
+  </section>
+  <footer class="footer"></footer>
+
+  <script src="js/script.js"></script>
+
+  <script id="exampletpl" type="text/template">
+    {{#example}}
+      <div class="key">
+        <h2>{{key1}}</h2>
+        <h3>{{key2}}</h3>
+        <p>{{key3}}</p>
+      </div>
+    {{/example}}
+  </script>
+</body>
+</html>
