@@ -120,7 +120,6 @@ gulp.task('html', function(){
     .pipe(connect.reload()) // reload sebserver page after html changes
 });
 
-
 gulp.task('images', function(){
   gulp.src('builds/development/images/**/*.*') // get all images in the subfolders of images dir
     .pipe(gulpif(env === 'production', imageMin({
@@ -157,9 +156,7 @@ gulp.task('connect', function(){
     // see https://www.npmjs.com/package/gulp-connect for server options
     root: 'builds/development',
     livereload: true
-
-  })
-
+  });
 });
 
 // Gulp Task to Run all as dependency tasks

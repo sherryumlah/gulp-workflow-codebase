@@ -38,4 +38,5 @@ When starting up gulp, the default gulp workflow task is set to watch for change
 
 
 ## SASS
-### gulp-sass-lint: for validation of SASS, run ```> gulp sassLint```
+### gulp-sass-lint:
+* Used for validation of SASS, run ```> gulp sassLint```
