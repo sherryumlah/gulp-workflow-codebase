@@ -12,8 +12,9 @@ This will start up a web server at http://localhost:8080 and begin watching for 
 The following node modules are dependencies for this project:
 
 ## Gulp
-## gulp: used for task automation and managing the workflow
+gulp: used for task automation and managing the workflow
 When starting up gulp, the default gulp workflow task is set to watch for changes to the following:
+
 
   ###HTML files: 'Builds/development/*.html'
   * Will reload the webserver page when html is modified
@@ -37,5 +38,4 @@ When starting up gulp, the default gulp workflow task is set to watch for change
 
 
 ## SASS
-##
-## gulp-sass-lint: for validation of SASS, run ```> gulp sassLint```
+### gulp-sass-lint: for validation of SASS, run ```> gulp sassLint```
