@@ -39,3 +39,6 @@ When starting up gulp, the default gulp workflow task is set to watch for change
 ## SASS
 ### gulp-sass-lint:
 * Used for validation of SASS, run ```> gulp sassLint```
+
+# Production
+Modify the environment variable within gulpfile.js to specify whether or not you want to use the ```process.env.NODE_ENV``` variable or manually set it to ```development``` or ```production```.  Setting the environment to production will produce minified, compressed, and optimized versions of your scripts, css, and images.

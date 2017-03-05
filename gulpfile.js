@@ -31,8 +31,8 @@ var env,
 // > export NODE_ENV=development (for MacOS)
 // > gulp
 // env = process.env.NODE_ENV || 'development' // node env var otherwise defaults to dev
-env = 'production'
-// env = 'development'
+// env = 'production'
+env = 'development'
 
 // modify how outputDir is used depending on env var
 if (env==='development'){
